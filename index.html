@@ -17,14 +17,28 @@
             font-family: "Sora", serif;
         }
     </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-high' '#EFEBE3',
+                        'btn-high-bg' '#179800',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="font-sora">
     <!-- header section -->
-    <header class="lg: container mx-auto">
+    <header class="lg: container mx-auto bg-amber-50 bg-gradient-to-tl">
         <!-- Nav -->
-        <nav>
-            <div class="navbar bg-base-100">
+        <nav class="mx-7">
+            <div class="navbar ">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -60,12 +74,25 @@
                     </ul>
                 </div>
                 <div class="navbar-end gap-3 ">
-                    <button class="btn btn-outline btn-success sm:block">Login</button>
-                    <button class="btn btn-success">Register</button>
+                    <button class="btn btn-outline btn-success btn-high-bg">Login</button>
+                    <button class="btn btn-success bg-green-600">Register</button>
                 </div>
 
             </div>
         </nav>
+        <!-- banner section -->
+        <div class="hero  min-h-screen mx-7">
+            <div class="hero-content text-center">
+              <div class="max-w-md">
+                <h1 class="text-3xl font-bold">Freshness <span class="text-green-700">You Can</span> <br>
+                    <span class="text-green-700">Count</span> On, Prices You’ll Love!</h1>
+                <p class="py-6 text-xs">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
+                </p>
+                <img src="c2-assets/hero-vegetables.png" alt="">
+              </div>
+            </div>
+          </div>
 
 
     </header>
